@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo2</title>
+    <style>
+        #container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            background-color: aqua;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: green;
+        }
+
+        /* saare child div ko ek width dena ho toh? */
+        /* .box1{
+            flex:1;
+        } */
+        
+        /* sirf box ko chahie perticular toh uski ko check kre */
+        .box1{
+            flex:1;
+        }
+        .box2{
+            flex:2;
+            
+        }
+        .box3{
+            flex:3;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="box1" class="box1">div 1</div>
+        <div id="box2" class="box2">div 2</div>
+        <div id="box3" class="box3">div 3</div>
+    </div>
+
+</body>
+</html>
