@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects Page</title>
+</head>
+
+<style>
+    .contact-section{
+        background-color:transparent;
+        width: 95%;
+        height: auto;
+        margin: auto;
+        margin-top: 55px;
+        padding: 80px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .contact-container{
+        width: 100%;
+        height: auto;
+        border: 1px solid white;
+        border-radius:0px 15px 0px 15px;
+        background-color: #FD6F00;
+        opacity: 0.3;
+    }
+    .contact-container:hover{
+        opacity: 1;
+        transition: 1500ms;
+        border-radius:15px 0px 15px 0px;
+    }
+    .contact-container h2{
+        color: white;
+        margin: 15px 0px;
+    }
+
+    .form-group input,select,textarea{
+        width: 50%;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+    .send-btn{
+        width: 20%;
+        height: 50px;
+    }
+    .send-btn:hover{
+        border-radius: 15px 15px 0 0;
+    }
+</style>
+
+<body>
+    <!-- header is start -->
+    <header>
+        <img src="logo.jpeg" alt="#">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="About.html" class="active">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <!-- header is end -->    
+
+<!-- contact form start -->
+
+<div class="contact-section">
+  <div class="contact-container">
+    <h2 style="margin: 15px 0px; font-size: 42px;">Contact me</h2>
+    <p class="subtitle" style="color: white; margin-bottom: 15px; font-size: 22px;">Cultivating Connections: Reach Out And Connect With Me</p>
+    
+    <form class="contact-form" action="#" method="POST">
+      <!-- Name Field -->
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <!-- Phone Number Field -->
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+      </div>
+
+      <!-- Service of Interest Dropdown -->
+      <div class="form-group">
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Service Of Interest</option>
+          <option value="service-1">Service Option 1</option>
+          <option value="service-2">Service Option 2</option>
+        </select>
+      </div>
+
+      <!-- Timeline Field -->
+      <div class="form-group">
+        <input type="text" id="timeline" name="timeline" placeholder="Timeline">
+      </div>
+
+      <!-- Project Details Textarea -->
+      <div class="form-group">
+        <textarea id="project-details" name="project_details" rows="5" placeholder="Project Details..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-submit">
+        <button type="submit" class="send-btn">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- contact form end -->
+
+
+</body>
+</html>

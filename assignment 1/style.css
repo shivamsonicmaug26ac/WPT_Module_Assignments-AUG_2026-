@@ -1,0 +1,542 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+ /* home page css start */
+ 
+ /* universal css start yaha se */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: radial-gradient(ellipse at 30% 45%, #1c1916 0%, #121212 45%, #111111 100%);
+    backdrop-filter: blur(10px);
+    min-height: 100vh; /* height: 100vh ki jagah yeh likhein */
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+        h1{
+            color: #E46400;
+        } 
+        /* universal css end yaha se */
+
+        /* header css start */
+
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding: 15px 15px;
+        border-radius: 13px;
+        background-color: #e463001e;
+        backdrop-filter: blur(50px);
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    header ul li {
+
+        list-style: none;
+
+    }
+
+    header ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: grey;
+    }
+
+    header ul li a:hover {
+        color: #FD6F00;
+        transition: 1500ms;
+        font-size: 20px;
+    }
+    header ul li a.active {
+        color: #FD6F00;
+    }
+
+    /* for mobile to tablet start */
+    @media(max-width:456px) {
+
+        header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 11px;
+            box-sizing: border-box;
+            padding: 15px;
+            justify-content: center;
+        }
+    }
+    /* for mobile to tablet end */
+    /* for tablet to desktop start */
+     @media(max-width:768px) {
+
+        header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            gap: 11px;
+            box-sizing: border-box;
+            padding: 15px;
+            justify-content: center;
+        }
+        header ul li a{
+            font-size: 15px;
+        }
+    }
+    /* for tablet to desktop end */
+
+    /* header css end */
+
+
+    /* hero content ka content start */
+    #hero-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 25px;
+    }
+    #hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 320px;
+        color: white;
+        gap: 20px;
+    }
+    #hero-content button{
+        width: 200px;
+        height: 50px;
+    }
+    #hero-img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("images/Ellipse 1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        padding: 20px; 
+    }
+    #hero-img img{
+        width: 345px;
+        border-radius: 290px;
+    }
+    #hero-content h1{
+        font-size: 45px;
+    }
+    #hero-content h2{
+        font-size: 50px;
+    }
+    #hero-content p{
+        font-size: 22px;
+        text-align: center;
+        line-height: 34.2px;
+    }
+    .btn-style{
+        background : linear-gradient(to right, #FD6F00, #E46400);
+        border-radius: 23px;
+        color: white;
+    }
+    .btn-style:hover{
+        border-radius: 0 0 23px 23px;
+        transition: all 0.4s ease;
+        box-shadow: 0 0 13px white;
+    }
+
+    /* hero content ka content end */
+
+ /* home page css start */
+
+
+ /* second section index start */
+ #second{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    box-sizing: border-box;
+    gap: 25px;
+    padding-top: 135px;
+    margin-bottom: 70px;
+}
+#sec-div-1{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+}
+#sec-div-1 button{
+    width: 50%;
+    height: 20%;
+}
+#sec-div-1 textarea{
+    width: 320px;
+}
+#sec-div-2{
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+}
+#sec-div-2 p{
+
+    font-size: 21px;
+    line-height: 1.5;
+}
+ /* second section index end */
+
+
+
+/* third and last section start */
+#third{
+    display: flex;
+    /* background-color: aqua; */
+    gap: 30px;
+    width: 96.5%;
+    margin: auto;
+    box-sizing: border-box;
+    /* padding: 25px; */
+}
+.box{
+    width: 33.33%;
+    height: 330px;
+    margin: auto;
+        background-color: #FD6F00;
+    opacity: 0.1;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        transition: opacity 1000ms ease;
+    margin-bottom: 25px;
+    color: white;
+}
+.box:hover{
+    background-color: #707070;
+    opacity: 1;
+    transition: all 1000ms;
+}
+
+/* third and last section end */
+
+
+
+
+
+
+
+   /* project page */
+     table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+        border: 2px solid black;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+    }
+    th, td:hover{
+        background-color: #E46400;
+    }
+
+    th {
+        background-color: #E46400;
+    }
+
+/* for the cards */
+#projects-section-spreetual{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.card-project{
+    background: linear-gradient(to right, #fd6e00, #ca5800f1);
+    opacity: 0.5;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    color: white;
+    font-size: 18px;
+
+    transition: opacity 1000ms ease;
+}
+.card-project:hover{
+        opacity: 1;
+}
+/* for the cards */
+        /* project page */
+
+/* for the cards */
+#projects-section-spreetual{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* for the cards */
+
+
+/* about me css start */
+
+#abt-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+#abt-me p{
+    line-height: 44.2px;
+    padding-right: 205px;
+    text-align: justify;
+    color:grey;
+    opacity: 0.4;
+    
+}
+#abt-me p:hover{
+    opacity: 1;
+    transition: all 1000ms;
+}
+
+#portfolio{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 60px;
+    padding: 50px;
+}
+.row{
+    width: 95.5%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.row a{
+    width: 30%;
+    height: auto;
+}
+.projects{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#projects-1 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-1:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/cp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+#projects-2 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-2:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/green.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+#projects-3 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-3:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/devine.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+#projects-4 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-4:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/bigbuzz.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+
+#projects-5 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-5:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/zen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+
+#projects-6 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-6:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/shivshakti.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+#projects-7 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-7:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/krishna.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+#projects-8 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-8:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/vidhya.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+
+#projects-9 {
+    background: transparent;
+    transition: background-color 1000ms ease;
+    opacity:0.2;
+}
+
+#projects-9:hover {
+    background-image: linear-gradient(#00000099, #00000099), url("images/drishti.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+
+
+
+/* about me css end */
+
+/* project page */
